@@ -2,7 +2,6 @@ package com.kenny.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Queue;
 
 public class PreorderTraversal {
 
@@ -17,7 +16,7 @@ public class PreorderTraversal {
             return ;
         }
 
-        Integer value = root.value;
+        Integer value = root.val;
         list.add(value);
         preorderTraversal(root.left, list);
         preorderTraversal(root.right, list);

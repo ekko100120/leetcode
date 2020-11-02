@@ -68,19 +68,45 @@ public class ReverseNSizeListNode {
 
     public ListNode reverseKGroup1(ListNode head, int k) {
 
+
         ListNode tmp = head;
-        for (int i = 1; i <k && tmp != null ; i++) {
+        for (int i = 1; i < k && tmp!=null ; i++) {
             tmp = tmp.next;
         }
-        if (tmp == null){
+        if (tmp ==null){
             return head;
         }
-        ListNode t2 = tmp.next;
-        tmp.next = null;
+        ListNode t2 =  tmp.next;
+        tmp.next =null;
         ListNode newHead = reverseNode(head);
-        ListNode newTmp = reverseKGroup1(t2,k);
-        head.next = newTmp;
+        ListNode newTemp = reverseKGroup1(t2,k);
+        head.next = newTemp;
         return newHead;
+
+
+
+
+
+
+
+
+
+
+
+
+//        ListNode tmp = head;
+//        for (int i = 1; i <k && tmp != null ; i++) {
+//            tmp = tmp.next;
+//        }
+//        if (tmp == null){
+//            return head;
+//        }
+//        ListNode t2 = tmp.next;
+//        tmp.next = null;
+//        ListNode newHead = reverseNode(head);
+//        ListNode newTmp = reverseKGroup1(t2,k);
+//        head.next = newTmp;
+//        return newHead;
 
     }
 

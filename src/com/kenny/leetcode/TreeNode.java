@@ -2,10 +2,11 @@ package com.kenny.leetcode;
 
 public class TreeNode {
 
-    TreeNode left;
-    TreeNode right;
-    int value;
-    public TreeNode(int value) {
-        this.value = value;
+    public TreeNode left;
+    public TreeNode right;
+    public int val;
+    public TreeNode next;
+    public  TreeNode(int val) {
+        this.val = val;
     }
 }

@@ -19,7 +19,7 @@ public class BFS {
                 if (current == null){
                     continue;
                 }
-                levelList.add(current.value);
+                levelList.add(current.val);
                 linkedList.add(current.left);
                 linkedList.add(current.right);
             }
